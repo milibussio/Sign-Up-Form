@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #181C24;
     color: white;
-
+    align-items: center;
 }
 
 .contenedorIzq{
@@ -30,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,9 +59,8 @@ a, a:visited{
     display: flex;
     flex-direction: column;
     width: 55vw;
+    height: 100vp;
     min-width: 550px;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
     padding-left: 5vw;
     padding-right: 5vw;
     gap: 20px;
@@ -95,20 +94,23 @@ label{
     font-size: 1rem;
 }
 
-input{
+input {
     width: 20vw;
-    height: 20px;
-    min-width: 100px;
+    height: 30px;
+    min-width: 250px;
     font-size: 1rem;
-    color:#10131B;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    border-width: 1px;
 }
 
-input:valid{
-    color:green;
+input:focus{
+    background-color: #181C24;
 }
 
-input:invalid{
-    color: red;
+input:not(:placeholder-shown):invalid{
+    border-color:red;
 }
 
 .row{
