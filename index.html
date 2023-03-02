@@ -4,34 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleReset.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="icon" href="images/favicon.ico">
-
     <title>¡Bienvenido!</title>
 </head>
+
 <body>
-    
-    <div class="contenedorIzq">
-        <img src="" alt="imagen lateral">
-        <img src="" alt="logo">
-        <p>Créditos al autor de la imagen</p>
+
+    <div class="contenedorIzq">    
+        <div class="contenedorLogo">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <p>ODIN</p>
+        </div> 
+        <p id="creditos">Foto de <a href="https://www.pexels.com/es-es/@semws/">Marco Milanesi</a> en <a href="https://www.pexels.com/es-es/">Pexels</a></p>
     </div>
 
     <div class="contenedorDer">
         <h1>Esto no es un servicio de verdad, es un ejercicio de práctica. Solo por registrarte, recibirás una vez al mes en tu casa un capibra. </h1>
         <h2>Sabes que quieres tener muchos capibaras.</h2>
-        <fieldset>
-            <legend>¡Completa con tus datos!</legend>
-            <input type="text" id="nombre">
-            <input type="text" id="apellido">
-            <input type="mail" id="mail">
-            <input type="number" id="telefono">
-            <input type="password" id="contraseña1">
-            <input type="password" id="contraseña2">
-        </fieldset>
+
+        <div class ="form">
+            <fieldset>
+                <legend>¡Completa con tus datos!</legend>
+                <div class="row">
+                    <div id class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                    </div>
+                    <div id class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id class="campo">
+                    <label for="mail">Mail</label>
+                    <input type="mail" id="mail" required>
+                    </div> 
+                    <div id class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id class="campo">
+                    <label for="contraseña1">Contraseña</label>
+                    <input type="password" id="contraseña1" required>
+                    </div> 
+                    <div id class="campo">
+                    <label for="contraseña2">Confirme contraseña</label>
+                    <input type="password" id="contraseña2" required>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
         <button type="submit">Crear cuenta</button>
-        <h4>¿Ya tienes cuenta?<a>Ingresa acá</a></h4>
+        <h4>¿Ya tienes cuenta? <a href="#">Ingresa acá</a></h4>
     </div>
 
 </body>

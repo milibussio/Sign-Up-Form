@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html{
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #181C24;
+    color: white;
+
+}
+
+.contenedorIzq{
+    position: relative;
+    background-image: url("images/fondo.jpg");
+    height: 100vh;
+    width: 35vw;
+    min-width: 350px;
+    background-size: cover;
+}
+
+
+.contenedorLogo{
+    position: absolute;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 20vh;
+}
+
+#logo{
+    width: 8rem;
+    height: auto;
+}
+
+#creditos{
+    position: absolute;
+    color: white;
+    top: 95vh;
+    opacity: 0.6;
+    width: 100%;
+    text-align: center;
+}
+
+a, a:visited{
+    color: white;
+}
+
+.contenedorDer{
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    min-width: 550px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form{
+    width: 100%;
+    color: rgba(200,200,200,200);
+    background-color: #10131B;
+    box-shadow: 0px 2px 2px 1px  rgba(100, 113, 126, 0.1);
+    margin: 0 -5vw 0 -5vw;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+legend{
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+label{  
+    font-size: 1rem;
+}
+
+input{
+    width: 20vw;
+    height: 20px;
+    min-width: 100px;
+    font-size: 1rem;
+    color:#10131B;
+}
+
+input:valid{
+    color:green;
+}
+
+input:invalid{
+    color: red;
+}
+
+.row{
+    display: flex;
+    gap: 15px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+button {
+    border-width: 0;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #2B3440;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover{
+    background-color: #10131B;
+}
