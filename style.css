@@ -107,8 +107,12 @@ input {
 
 input:focus{
     background-color: #181C24;
+    border-color: lightblue;
+    border-width: 1px;
+    outline: none;
 }
 
+.invalid,
 input:not(:placeholder-shown):invalid{
     border-color:red;
 }
