@@ -112,14 +112,34 @@ input:focus{
     outline: none;
 }
 
-.invalid,
+/*
+input:not(:placeholder-shown).invalid,
 input:not(:placeholder-shown):invalid{
     border-color:red;
+}
+*/
+
+input:valid{
+    border-color: lightgreen;
+}
+
+p.advertencia:empty{
+    display: none;
+}
+
+p.advertencia{
+    font-size: 0.9rem;
+    color: turquoise;
+    opacity: 0.8;
+    padding-top: 0.1rem;
+    margin-bottom: -1rem;
+    text-align: right;
 }
 
 .row{
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    margin-bottom: 1rem;
 }
 
 .campo{
