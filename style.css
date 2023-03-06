@@ -17,6 +17,7 @@ body {
     position: relative;
     background-image: url("images/fondo.jpg");
     height: 100vh;
+    min-height: 620px;
     width: 35vw;
     min-width: 350px;
     background-size: cover;
@@ -58,9 +59,11 @@ a, a:visited{
 .contenedorDer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 55vw;
-    height: 100vp;
+    height: 100vh;
     min-width: 550px;
+    min-height: 620px;
     padding-left: 5vw;
     padding-right: 5vw;
     gap: 20px;
